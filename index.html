@@ -3,24 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
     <title>ClimaApp</title>
 </head>
 <body>
 <h1>Simple Weather App</h1>
+<div class="outline">
+    <header>
 <form>
-    <input type="text">
-    <input type="submit" value="CHECK">
+    <input type="search" class="search-input">
+    <input type="submit" value="CHECK" class="submit-button">
     
 </form>
-<div>
-    <div>26&deg;C<br>Precip:0%<br>Humidity:55%<br>Wind:8km/hr</div>
-    <div>FRANCE<br>
-        18:37-Monday 18 Jan 23
-        <div><img src="https://openweathermap.org/img/wn/10d@2x.png"><span>Sunny</span></div>
+</header>
+<main>
+<div class="details-container">
+   
+    <div class="right-container"><span class="city">FRANCE</span><br>
+        <span>18:37-Monday 18 Jan 23</span><div class="properties"><div class="prop">HUMIDITY<br>55%</div><div class="prop_1" style="margin-left:10px ;">WIND<br>8km/hr</div></div>
+        
 
     </div>
+    <div class="parent-temperature"><div class="conditions">
+        <img src="https://openweathermap.org/img/wn/10d@2x.png">
+    </div><div><span class="temperature">26</span>&deg;C<br>Rainy</div>
+    </div>
 </div>
+</main>
 <footer>Designed and built by<a href="#">Ritah</a> and is on<a href="#"> Github</a>and hosted on <a href="#">netlify</a></footer>
+</div>
     
 </body>
 </html>
