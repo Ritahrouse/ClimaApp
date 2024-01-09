@@ -1,6 +1,8 @@
 
 body{
 background-color: #D6FFFF;
+font-family: 'Croissant One', serif;
+    font-family: 'Salsa', cursive;
 }
 h1{
     text-align: center;
@@ -29,8 +31,9 @@ h1{
     font-weight: bold;
 }
 header{
-    padding: 5px;
-    border-bottom: 1px solid #f9f7fe;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #01B1AC;
 }
 .details-container{
     display: flex;
@@ -63,11 +66,14 @@ main{
 }
 .right-container{
     margin-top:30px;
+    font-family: 'Croissant One', serif;
+    font-family: 'Salsa', cursive;
 }
 .properties{
     margin-top: 10px;
     display: flex;
     justify-content: space-around;
+    color: #83878D;
 }
 .prop{
     text-align: center;
@@ -79,4 +85,11 @@ main{
     text-align: center;
     padding: 10px;
     margin-right: 10px;
+}
+footer{
+    text-align: center;
+    border-top: 1px solid #01B1AC;
+    color: #83878D;
+    margin-top: 10px;
+    padding-top:15px;
 }
