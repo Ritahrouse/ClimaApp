@@ -12,8 +12,12 @@ h1{
     background-color: white;
     max-width: 50%;
     padding: 15px;
-   
+box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+border-radius: 10px;
 
+}
+a{
+    color: #078C88;
 }
 .search-input{
     background-color: #D6FFFF;
@@ -21,6 +25,7 @@ h1{
     border-radius: 8px;
     border: none;
     padding: 15px 20px;
+    color: #83878D;
 }
 .submit-button{
     padding: 15px 20px;
@@ -59,6 +64,7 @@ header{
 .city{
     font-size: 2em;
     font-weight: bold;
+    
 }
 main{
     padding: 10px;
@@ -92,4 +98,14 @@ footer{
     color: #83878D;
     margin-top: 10px;
     padding-top:15px;
+}
+.weather-app-icon {
+    width: 100px;
+    height: 150px;
+}
+#wind{
+    color: #078C88;
+}
+#humidity{
+    color: #078C88;
 }

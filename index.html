@@ -7,14 +7,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Salsa&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <title>ClimaApp</title>
 </head>
 <body>
 <h1>Simple Weather App</h1>
 <div class="outline">
     <header>
-<form>
-    <input type="search" class="search-input">
+<form id="search-form">
+    <input type="search" class="search-input" id="input" placeholder="Enter the city......">
     <input type="submit" value="CHECK" class="submit-button">
     
 </form>
@@ -22,19 +23,20 @@
 <main>
 <div class="details-container">
    
-    <div class="right-container"><span class="city">FRANCE</span><br>
-        <span style="color: #83878D;">18:37-Monday 18 Jan 23</span><div class="properties"><div class="prop">HUMIDITY<br>55%</div><div class="prop_1" style="margin-left:10px ;">WIND<br>8km/hr</div></div>
+    <div class="right-container"><span class="city" id="city_search">France</span><br>
+        <span style="color: #83878D;" id="time_day"></span><div class="properties"><div class="prop">HUMIDITY<br><span id="humidity">55%</span></div><div class="prop_1" style="margin-left:10px ;">WIND<br><span id="wind">8km/hr</span></div></div>
         
 
     </div>
-    <div class="parent-temperature"><div class="conditions">
+    <div class="parent-temperature"><div class="conditions" id="icon">
         <img src="https://openweathermap.org/img/wn/10d@2x.png">
-    </div><div><span class="temperature">26</span>&deg;C<br><span style="color: #83878D;">Rainy</span></div>
+    </div><div><span class="temperature" id="temp">26</span>&deg;C<br><span style="color: #83878D;" id="condition">Rainy</span></div>
     </div>
 </div>
 </main>
-<footer>Designed and built by<a href="#">Ritah</a> and is on<a href="#"> Github</a>and hosted on <a href="#">netlify</a></footer>
+<footer>Designed and built by<a href="#" target="_blank"> Ritah</a> and is on<a href="#" target="_blank"> Github</a> and hosted on <a href="#" target="_blank">netlify</a></footer>
 </div>
+<script src="src/index.js"></script>
     
 </body>
 </html>
